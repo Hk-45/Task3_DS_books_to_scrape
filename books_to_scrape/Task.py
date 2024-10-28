@@ -17,7 +17,7 @@ for bookData in books:
   title = bookData.h3.a["title"]
   #title = header.find_all('title',attrs={'title'})
   price = bookData.find('p',attrs={'class':'price_color'}).text
-  rating = bookData.find('p',attrs={'class':'star-rating'})['class']
+  rating = bookData.find('p',attrs={'class':'star-rating'})['class'][1]
 
   bookData ={
     'Title': title,
