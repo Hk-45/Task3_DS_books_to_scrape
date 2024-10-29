@@ -43,7 +43,7 @@ print()
 
 booksRating =[]
 for bookRating in books:
-    rating = bookRating.find('p',attrs={'class':'star-rating'})['class']
+    rating = bookRating.find('p',attrs={'class':'star-rating'})['class'][1]
     #print('bookRating =',rating)
     
     booksRating.append({'rating':rating})
